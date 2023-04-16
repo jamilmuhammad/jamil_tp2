@@ -1,0 +1,124 @@
+section.login-page {
+    
+    .login-warp {
+        max-width: 1440px;
+        height: 90vh;
+    }
+
+    .login-title {
+        width: 353px;
+
+        h2 {
+            font-weight: 700;
+            font-size: 34px;
+        }
+        p {
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+
+    .login-form {
+        width: 353px;
+    }
+    
+    input {
+        height: 40px;
+    }
+
+    .login-image {
+        position: relative;
+        z-index: -1;
+        img {
+            height: 458px;
+        }
+    }
+
+    .bg {
+        position: absolute;
+        &.bg-1 {
+            bottom: 0;
+            left: 0;
+
+            img {
+                height: 586px;
+            }
+        }
+        &.bg-2 {
+            top: 0;
+            right: 0;
+
+            img {
+                height: 257px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1441px) {
+        .login-warp {
+            display: flex;
+            justify-content: center;
+            height: 80vh;
+        } 
+    }
+
+    @media(max-width: 1024.98px) {
+        .login-warp {
+            height: auto;
+        }
+
+        .login-left {
+            margin-top: 60px;
+        }
+
+        .login-image {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .bg {
+            position: absolute;
+            &.bg-1 {
+                img {
+                    height: 100%;
+                }
+            }
+            &.bg-2 {
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 575.98px) {
+        .login-warp {
+            height: 100vh;
+        }
+
+        .bg {
+            &.bg-1 {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            &.bg-2 {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        .login-image {
+            z-index: 1;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

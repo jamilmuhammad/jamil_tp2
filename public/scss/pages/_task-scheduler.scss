@@ -1,0 +1,70 @@
+section.task-scheduler-page {
+
+    .header-top {
+        height: auto;
+        font-size: 18px;
+        font-weight: bold;
+        color: $black;
+        margin-bottom: 20px;
+
+        span {
+            cursor: pointer;
+        }
+    }
+
+    .date-column {
+        width: 100%;
+        margin: 0 1px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .date-title {
+        background-color: $red;
+        font-size: 14px;
+        color: $white;
+        font-weight: bold;
+        padding: 2px 0;
+
+        &.active {
+            background-color: $blue !important;
+        }
+    }
+
+    .task-list {
+        min-height: 500px;
+        max-height: 500px;
+        padding: 0 5px;
+
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .card {
+            margin: 7px 0;
+            color: $black;
+            font-size: 10px;
+            font-weight: bold;
+            text-align: left;
+            cursor: pointer;
+
+            .card-body {
+                padding: 0.2rem;
+
+                .task-left {
+                    word-wrap: break-word;
+                    width: 100%;
+                }
+            }
+        }
+
+        .no-task .card-body{
+            height: 30px;
+            padding: 6px;
+            text-align: center;
+        }
+    }
+}
